@@ -6,33 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+     <link href="Estilos/Estilo.css" rel="stylesheet" type="text/css" />
     <style>
-         footer{
 
-position: fixed;
-
-width: 1500px;
-
-bottom: 35px;
-
-height: 2px;
-
-padding-bottom: 16px;
-
-border-top: 2px solid rgb(0, 255, 144);
-
-z-index:2000;
-margin-left: 0px;
-
-}
-        .auto-style1 {
-            width: 886px;
-        }
-        .auto-style2 {
-            width: 100%;
-            left: -1px;
-            bottom: 23px;
-        }
+     
     </style>  
 </head>
 <body>

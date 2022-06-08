@@ -6,52 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
- <style>
-         footer{
-
-position: fixed;
-
-width: 1500px;
-
-bottom: 35px;
-
-height: 2px;
-
-padding-bottom: 16px;
-
-border-top: 2px solid rgb(0, 255, 144);
-
-z-index:2000;
-margin-left: 0px;
-
-}
-        body{
-            background-color: #ffffff;
-            color: #ffffff ;
-        }
-        table thead{
-            background-color: #ac0a0qa darkmagenta;
-            color: rgb(0, 255, 144);
+    <link href="Estilos/Estilo.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 1293px;
         }
     </style>
- <style type="text/css">
-  .boton_personalizado{
-    text-decoration: none;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 20px;
-    border: 2px solid #808080;
-
-  }
-  .boton_personalizado:hover{
-    color: #18803b;
-    background-color: #ffffff;
-  }
-</style>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -167,14 +127,16 @@ margin-left: 0px;
         </table>        
     </form>
 
-    <footer style="width:101%; margin-left: 0px; left: -2px;" class="footer">
+    <footer>
     <div class="copyright" style="background-color: #0d47a1;">
-        <div  class="container-fluid" style="background-color: #000; color: #ffffff;">
+    </div>
+    </footer>
+
+        <div  class="auto-style1" style="background-color: #000; color: #ffffff;">
             Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
             Telefono: 7828181277<br />
             ventas@grupoingenia.com.mx
         </div>
-    </div>
-</footer>
-
-</body></html>
+    
+</body>
+</html>
