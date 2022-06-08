@@ -36,6 +36,8 @@ margin-left: 0px;
     </style>  
 </head>
 <body>
+
+    <!-- PRUEBA DOS-->
     <form id="form1" runat="server">
         <table align="center" border="1" bordercolor="blue">
         <tr >
