@@ -19,7 +19,7 @@ namespace PROYECTO_INGENIA
             SqlCommand oCmd = new SqlCommand();
             oCmd.CommandType = System.Data.CommandType.StoredProcedure;
             oCmd.Connection = oConn;
-            oCmd.CommandText = "CLIENTE_CREATE";
+            oCmd.CommandText = "PRODUCTO_CREATE";
 
             //Paso de parametros al procedimiento almacenado
             oCmd.Parameters.Add("Nombre_Producto", SqlDbType.NVarChar, 50);
