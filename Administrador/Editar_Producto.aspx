@@ -62,7 +62,7 @@ margin-left: 0px;
         <asp:Button class="boton_personalizado" ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click"/>
         </div>
 
-        <table style="width: 30%">
+        <table style="width: 30%" align="center">
             <tr >
                 <td class="style">
                     <asp:Label ID="lbl" runat="server" Font-Names="Arial" Font-Size="10pt"
@@ -126,7 +126,7 @@ margin-left: 0px;
         </table >
 
         
-        <table>
+        <table align="center">
              <tr>
                <td>
                    <asp:GridView ID="gvDatos" runat="server">

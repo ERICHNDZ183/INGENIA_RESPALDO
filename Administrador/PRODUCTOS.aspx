@@ -29,14 +29,14 @@ margin-left: 0px;
 </head>
 <body>
     <form id="form1" runat="server">
-        <table>
+        <table align="center">
              <tr>
                <td>
                    <asp:GridView ID="gvDatos" runat="server"></asp:GridView>
                </td>
            </tr> 
        </table>
-       <table>
+       <table align="center">
             <tr>
                    <td>
                        <asp:Button ID="btnEditarProductos" runat="server" Text="Editar Productos" style="height: 26px" OnClick="btnEditarProductos_Click1" />

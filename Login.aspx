@@ -49,6 +49,11 @@ z-index:2000;
 	    margin-left: 40px;
         margin-right: 100px;
     }
+    .auto-style1 {
+        width: 102%;
+        left: 4px;
+        bottom: -6px;
+    }
 </style>
        
 </head>
@@ -110,10 +115,12 @@ z-index:2000;
             <div>
                 <button class="btn btn-success">Iniciar</button>
            </div>
+            <p>¿Aun no tienes cuenta? ¡resgistrate!</p>
+            <asp:button ID="REGISTRARSE" runat="server" text="Registrar" class="btn-warning" OnClick="REGISTRARSE_Click"/>
         </div>
     </form>
 
-    <footer  style="width:102%; margin-left: 0px; left: 2px;" class="footer">
+    <footer  style="margin-left: 0px; " class="auto-style1">
     <div style="background-color: #000000; color: #ffffff;">
        Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
        Telefono: 7828181277<br />

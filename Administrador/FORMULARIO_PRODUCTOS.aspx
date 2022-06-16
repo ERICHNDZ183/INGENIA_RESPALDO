@@ -40,7 +40,7 @@ margin-left: 0px;
 </head>
 <body>
     <form id="form1" runat="server">
-        <table style="width: 100%">
+        <table align="center">
             <!-- cambia los texbox como el de aqui a bajo para probar si se guarda la infomracion como en este link   
                 http://www.maestrosdelweb.com/tutorial-asp-net-acceso-a-datos-consultar-y-guardar-informacion-desde-webforms/ -->
      

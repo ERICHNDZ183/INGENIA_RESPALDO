@@ -13,5 +13,10 @@ namespace PROYECTO_INGENIA
         {
 
         }
+
+        protected void REGISTRARSE_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ADMINISTRADOR/FORMULARIO_CLIENTES.aspx");
+        }
     }
 }
