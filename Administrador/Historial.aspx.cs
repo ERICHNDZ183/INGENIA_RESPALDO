@@ -63,7 +63,7 @@ namespace PROYECTO_INGENIA
 
         protected void btnHOME_Click(object sender, EventArgs e)
         {
-            Response.Redirect("INICIO.aspx");
+            Response.Redirect("../INICIO.aspx");
         }
     }
 }

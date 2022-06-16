@@ -76,5 +76,10 @@ namespace PROYECTO_INGENIA
         {
             Response.Redirect("../INICIO.aspx");
         }
+
+        protected void btnHistorial_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("HISTORIAL.aspx");
+        }
     }
 }

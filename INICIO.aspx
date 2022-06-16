@@ -166,7 +166,7 @@ $("ul").click(function(ev){
             <ul>
             <li><a href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Cliente</a></li>
             <li><a href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
-            <li><a href="#">Historial</a></li>
+            <li><a href="Administrador/HISTORIAL.aspx">Historial</a></li>
             </ul>
         </li>
           <li class="submenu"><a href="Administrador/PRODUCTOS.aspx">Productos<i class="fa fa-caret-down"></i></a>
@@ -240,27 +240,7 @@ $("ul").click(function(ev){
                 </div>
            </div>
 
-        <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Experiencia</h5>
-                            <p class="card-text">
-                                Nuestro grupo contiene experiencia en sistemas de telecomunicaciones, sistema de telefonía, videovigilancia,
-                                mantenimiento a equipos de conmutacion telefonica
-                            </p><div>
-                            <img src="Imagenes/WA_Data-864x1536.jpg" width="600" height="800" />
-                        </div>
-                    </div>
-                </div> 
-    <form id="form1" runat="server">
-        
-
-           
-            
-            
-            
-            
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -298,6 +278,29 @@ $("ul").click(function(ev){
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+        <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Experiencia</h5>
+                            <p class="card-text">
+                                Nuestro grupo contiene experiencia en sistemas de telecomunicaciones, sistema de telefonía, videovigilancia,
+                                mantenimiento a equipos de conmutacion telefonica
+                            </p><div>
+                            <img src="Imagenes/WA_Data-864x1536.jpg" width="600" height="800" />
+                        </div>
+                    </div>
+                </div> 
+
+    <form id="form1" runat="server">
+        
+
+           
+            
+            
+            
+            
+
+        
     </form>
 
 

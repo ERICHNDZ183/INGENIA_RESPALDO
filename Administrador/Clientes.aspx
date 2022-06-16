@@ -95,7 +95,7 @@ margin-left: 0px;
                 <td>
                     <div>
                     <asp:Button class="boton_personalizado" ID="btnHOME" runat="server" Text="HOME" OnClick="btnHOME_Click"/>
-                    <asp:Button class="boton_personalizado" ID="btnHistorial" runat="server" Text="Historial" />
+                    <asp:Button class="boton_personalizado" ID="btnHistorial" runat="server" Text="Historial" OnClick="btnHistorial_Click1" />
                     <asp:Button class="boton_personalizado" ID="btnAgregar_cliente" runat="server" Text="Agregar cliente" OnClick="btnAgregar_cliente_Click1"/>
 
                     </div>
@@ -103,10 +103,10 @@ margin-left: 0px;
             </tr>
          </table>
    
-        <table cellspacing="1" style="background: #3aff74; border: 10px solid #18803b;" align="center">
-             <tr>
-               <td>
-                   <asp:GridView ID="gvDatos" runat="server"  fontcolor="#ffffff">
+        <table bordercolor="white"; style="background: #ffd800;" align="center" border="1">
+             <tr fontcolor="#ffffff">
+               <td fontcolor="#ffffff">
+                   <asp:GridView ID="gvDatos" runat="server"  >
                    </asp:GridView>
                </td>
            </tr> 
