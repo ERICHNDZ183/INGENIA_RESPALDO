@@ -519,6 +519,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Clientes\" />
+    <Folder Include="Usuarios\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
