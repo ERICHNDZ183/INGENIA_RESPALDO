@@ -49,10 +49,10 @@ z-index:2000;
 	    margin-left: 40px;
         margin-right: 100px;
     }
-    .auto-style1 {
-        width: 102%;
-        left: 4px;
-        bottom: -6px;
+    .auto-style2 {
+        left: -1px;
+        bottom: 173px;
+        width: 1526px;
     }
 </style>
        
@@ -120,7 +120,7 @@ z-index:2000;
         </div>
     </form>
 
-    <footer  style="margin-left: 0px; " class="auto-style1">
+    <footer  style="margin-left: 0px; " class="footer">
     <div style="background-color: #000000; color: #ffffff;">
        Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
        Telefono: 7828181277<br />

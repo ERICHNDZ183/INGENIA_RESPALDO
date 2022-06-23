@@ -82,7 +82,7 @@ footer {
                     <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre_Cliente"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                 <asp:TextBox ID="txtNombre_Cliente" runat="server" Width="205px" ></asp:TextBox>
                 </td>
             </tr>
@@ -92,7 +92,7 @@ footer {
                     <asp:Label ID="lblApellido" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Apellido"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtApellido" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -102,7 +102,7 @@ footer {
                     <asp:Label ID="lblUbicacion" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Ubicacion"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                 <asp:TextBox ID="txtUbicacion" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -112,7 +112,7 @@ footer {
                     <asp:Label ID="lblCorreo" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtCorreo" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -122,7 +122,7 @@ footer {
                     <asp:Label ID="lblTelefono" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtTelefono" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -132,7 +132,7 @@ footer {
                     <asp:Label ID="lblNombre_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre Empresa"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtNombre_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -142,7 +142,7 @@ footer {
                     <asp:Label ID="lblCorreo_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo Empresa"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtCorreo_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -152,7 +152,7 @@ footer {
                     <asp:Label ID="lblTelefono_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono Empresa"></asp:Label>
                 </td>
-                <td>
+                <td bgcolor="green">
                     <asp:TextBox ID="txtTelefono_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>

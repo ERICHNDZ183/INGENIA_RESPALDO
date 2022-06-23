@@ -149,6 +149,7 @@
     <Content Include="lib\twitter-bootstrap\js\bootstrap.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Public\Estilos\Estilos.css" />
+    <Content Include="Registro_Usuarios.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -493,6 +494,13 @@
     </Compile>
     <Compile Include="Administrador\Servicios.aspx.designer.cs">
       <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Usuarios.aspx.cs">
+      <DependentUpon>Registro_Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_Usuarios.aspx.designer.cs">
+      <DependentUpon>Registro_Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
