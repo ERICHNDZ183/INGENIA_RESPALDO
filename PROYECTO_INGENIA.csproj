@@ -116,6 +116,22 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-grid.rtl.css" />
+    <Content Include="css\bootstrap-grid.rtl.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap-reboot.rtl.css" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="css\bootstrap-utilities.css" />
+    <Content Include="css\bootstrap-utilities.min.css" />
+    <Content Include="css\bootstrap-utilities.rtl.css" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.rtl.css" />
+    <Content Include="css\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Administrador\Editar_Clientes.aspx" />
     <Content Include="Administrador\Editar_Producto.aspx" />
@@ -125,6 +141,12 @@
     <Content Include="Global.asax" />
     <Content Include="Administrador\Historial.aspx" />
     <Content Include="INICIO.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.esm.js" />
+    <Content Include="js\bootstrap.esm.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
     <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.css" />
     <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.rtl.css" />
@@ -281,6 +303,28 @@
     <Content Include="lib\twitter-bootstrap\scss\mixins\_visually-hidden.scss" />
     <Content Include="lib\twitter-bootstrap\scss\utilities\_api.scss" />
     <Content Include="lib\twitter-bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="css\bootstrap-utilities.css.map" />
+    <Content Include="css\bootstrap-utilities.min.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\bootstrap.rtl.css.map" />
+    <Content Include="css\bootstrap.rtl.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.esm.js.map" />
+    <Content Include="js\bootstrap.esm.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Administrador\PRODUCTOS.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -527,8 +571,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Clientes\" />
-    <Folder Include="css\" />
-    <Folder Include="js\" />
     <Folder Include="Usuarios\" />
   </ItemGroup>
   <ItemGroup>

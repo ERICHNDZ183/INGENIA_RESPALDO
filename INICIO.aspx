@@ -5,6 +5,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>    
     <title>PTC INGENIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet"/>
   
     <style type="text/css">    
@@ -158,7 +160,7 @@ $("ul").click(function(ev){
    
 
 <body>
-    <header>
+    <header class="navbar-fixed-top ">
      <img src="Imagenes/LOGO.jpeg" class="rounded-3 centrado" alt="HTML5 ICON" width="150" height="64" />
     <input type="checkbox" id="btn-menu" />
     <label for="btn-menu"><i class="fa fa-bars"></i></label>
@@ -251,22 +253,22 @@ $("ul").click(function(ev){
 
 
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="Imagenes/puppy.jpg" class="d-block w-100" alt="..."/>
+    <div class="carousel-item active" data-bs-interval="3500">
+      <img src="Imagenes/puppy.jpg" class="d-block w-100" alt="banner 1"/>
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="Imagenes/fondo_login.jpg" class="d-block w-100" alt="..."/>
+    <div class="carousel-item" data-bs-interval="3500">
+      <img src="Imagenes/fondo_login.jpg" class="d-block w-100" alt="banner 2"/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="Imagenes/fondo_login_2.jpg" class="d-block w-100" alt="..."/>
+      <img src="Imagenes/fondo_login_2.jpg" class="d-block w-100" alt="banner 3"/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
@@ -321,6 +323,11 @@ $("ul").click(function(ev){
         </div>
     </div>
 </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
 </body>
   
 
