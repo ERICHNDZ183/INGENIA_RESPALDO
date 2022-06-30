@@ -34,92 +34,92 @@ margin-left: 0px;
 
 <body>
     <form id="form" runat="server">
-        <table align="center" border="1" bordercolor="blue">
-        <tr >
-        <td>
+        <table align="center" border="1" bordercolor="purple">
+        <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Nombre Usuario"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="lima">
         <asp:TextBox ID="txtNombre_Cliente" runat="server" Width="210px" ></asp:TextBox>
         </td>
         </tr>
 
-        <tr>
-        <td>
+        <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblApellido" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Apellido"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtApellido" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblUbicacion" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Ubicacion "></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtUbicacion" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblCorreo" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Correo"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtCorreo" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblTelefono" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Telefono"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtTelefono" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
             
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblNombre_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Nombre Empresa"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtNombre_Empresa" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
             
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblCorreo_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Correo Empresa"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtCorreo_Empresa" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
             
-            <tr>
-        <td>
+            <tr bgcolor="green">
+        <td bgcolor="orange">
         <asp:Label ID="lblTelefono_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
         Text="Telefono Empresa"></asp:Label>
         </td>
-        <td>
+        <td bgcolor="orange">
         <asp:TextBox ID="txtTelefono_Empresa" runat="server" Width="210px"></asp:TextBox>
         </td>
         </tr>
 
         </table>
-        <asp:Button ID="Guardar_Usuario" runat="server" Text="Registrar!" OnClick="Guardar_Usuario_Click" />
+        <asp:Button class="btn-warning " ID="Guardar_Usuario" runat="server" Text="Registrar!" OnClick="Guardar_Usuario_Click" />
         <asp:Button ID="VOLVER_in" runat="server" Text="VOLVER"/>
         <asp:Button ID="btnHome" runat="server" Text="Home"/>
     </form>

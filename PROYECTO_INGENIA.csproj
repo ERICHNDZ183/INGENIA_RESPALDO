@@ -527,6 +527,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Clientes\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
     <Folder Include="Usuarios\" />
   </ItemGroup>
   <ItemGroup>
