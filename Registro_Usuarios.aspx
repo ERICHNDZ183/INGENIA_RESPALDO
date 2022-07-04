@@ -83,7 +83,22 @@ margin-left: 0px;
          </div>
             </div>
 
+        <div>
+            <div>
+                <table>
+                 <tr >
+        <td>
+        <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
+        Text="Nombre_Cliente"></asp:Label>
+        </td>
+        <td>
+        <asp:TextBox class="form-floating" ID="txtNombre_Cliente"  runat="server" Width="210px" ></asp:TextBox>
+        </td>
+        </tr>
+                    </table>
 
+            </div>
+        </div>
     </form>
 
 

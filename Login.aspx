@@ -104,7 +104,7 @@ z-index:2000;
                <img src="Imagenes/LOGO.jpeg" class="rounded-3 centrado_img" alt="HTML5 ICON" width="150" height="90" />
             <h5 class="card-title">Login</h5>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
               <label for="floatingInput">Correo Electronico</label>
             </div>
             <div class="form-floating">
