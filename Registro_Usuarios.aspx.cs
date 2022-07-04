@@ -24,7 +24,7 @@ namespace PROYECTO_INGENIA
 
         protected void Registrar_Click(object sender, EventArgs e)
         {
-           if()
+           
         }
     }
 }
