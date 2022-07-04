@@ -120,12 +120,15 @@ z-index:2000;
         </div>
     </form>
 
-    <footer  style="margin-left: 0px; " class="footer">
+  
+
+
+  <!--  <footer  style="margin-left: 0px; " class="footer">
     <div style="background-color: #000000; color: #ffffff;">
        Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
        Telefono: 7828181277<br />
        ventas@grupoingenia.com.mx
     </div>
-    </footer>  
+    </footer>  -->
 </body>
 </html>
