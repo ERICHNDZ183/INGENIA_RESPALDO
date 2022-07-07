@@ -64,41 +64,43 @@ margin-left: 0px;
           <div class="card-body">
                <img src="Imagenes/LOGO.jpeg" class="rounded-3 centrado_img" alt="HTML5 ICON" width="150" height="90" />
             <h5 class="card-title">Login</h5>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
-              <label for="floatingInput">Correo Electronico</label>
-            </div>
-            <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
-              <label for="floatingPassword">Contraseña</label>
+             <table align="center" border="1" bordercolor="blue">
+        
+        <tr>
+        <asp:Label ID="lblUsuario" runat="server" Font-Names="Arial" Font-Size="10pt"
+        Text="Usuario"></asp:Label>
+        </tr>
+        <tr>
+        <asp:TextBox ID="txtUsuario" runat="server" Width="210px" ></asp:TextBox>
+        </tr>
+        
 
-            </div>
-              <div class="form-floating">
-              <input type="password" class="form-control" id="floatingConfirmar" placeholder="Password"/>
-              <label for="floatingPassword">Confirmar</label>
-            </div>
+        
+        <tr>
+        <asp:Label ID="lblContraseña" runat="server" Font-Names="Arial" Font-Size="10pt"
+        Text="Contraseña"></asp:Label>
+        </tr>
+        <tr>
+        <asp:TextBox ID="txtContraseña" runat="server" Width="210px"></asp:TextBox>
+        </tr>
+       
+
+            
+        <tr>
+        <asp:Label ID="lblConfirmar" runat="server" Font-Names="Arial" Font-Size="10pt"
+        Text="Confirmar"></asp:Label>
+        </tr>
+        <tr>
+        <asp:TextBox ID="txtConfirmar" runat="server" Width="210px"></asp:TextBox>
+        </tr>
+        
+        </table>
           </div>
             <div>
-                  <asp:Button class="btn btn-alert-success" ID="Registrar" runat="server" Text="Guardar" OnClick="Registrar_Click" />
+                  <asp:Button class="btn btn-success" ID="Registrar" runat="server" Text="Guardar" OnClick="Registrar_Click" />
          </div>
             </div>
 
-        <div>
-            <div>
-                <table>
-                 <tr >
-        <td>
-        <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
-        Text="Nombre_Cliente"></asp:Label>
-        </td>
-        <td>
-        <asp:TextBox class="form-floating" ID="txtNombre_Cliente"  runat="server" Width="210px" ></asp:TextBox>
-        </td>
-        </tr>
-                    </table>
-
-            </div>
-        </div>
     </form>
 
 
