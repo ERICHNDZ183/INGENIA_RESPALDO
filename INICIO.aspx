@@ -9,158 +9,6 @@
     
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet"/>
   
-    <style type="text/css">    
-        body{
-            background-color: #FFF;
-            color: rgb(0,0,0);
-        }
-        table thead{
-            background-color: #ac0a0a;
-            color: rgb(0, 255, 144);
-        }
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        header 
-        {
-            height: 64px;
-            background: #2C3E50;
-            color: #FFF;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #btn-menu 
-        {
-            display: none;
-        }
-
-        header label 
-        {
-            font-size: 30px;
-            cursor: pointer;
-            display: none;
-        }
-
-        .menu ul
-        {
-            background: #2C3E50;
-            display: flex;
-            list-style: none;
-        }
-
-        .menu ul ul 
-        {
-            display: none;
-        }
-
-        .menu a 
-        {
-            display: block;
-            padding: 15px 20px;
-            color: #FFF;
-            text-decoration: none;
-            line-height: 32px;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 700;
-        }
-
-        .menu a:hover 
-        {
-            background: #2C3E50;
-        }
-
-        .menu a i 
-        {
-            margin-left: 10px;
-        }
-
-        .menu ul li:hover ul
-        {
-            transition: all 0.3s ease;
-            display: block;
-            position: absolute;
-        }
-
-        @media (max-width: 768px) 
-        {
-            header label 
-            {
-                display: block;
-                padding-top: 16px;
-                padding-right: 16px;
-                transition: all 0.4s ease;
-            }
-  
-            .menu 
-            {
-                position: absolute;
-                top: 64px;
-                left: 0;
-                width: 70%;
-                transform: translateX(-100%);
-                transition: all 0.3s;
-            }
-  
-            .menu ul 
-            {
-                flex-direction: column;
-                //display: block;
-            }
-  
-            .menu ul li:hover ul
-            {
-                display: none;
-                position: static;
-            }
-  
-            .menu a i 
-            {
-                position: absolute;
-                right: 16px;
-                line-height: 32px;
-            }
-  
-            #btn-menu:checked ~ .menu 
-            {
-                transform: translateX(0%);
-            }
-  
-        }
-
-        color
-        {
-            color: white;
-        }
-
-          .centrado
-          {
-		    margin-left: 0px;
-            margin-right: auto;
-          }
-
-           .centrado2
-          {
-		    margin-left: 90px;
-            margin-right: 180px;
-          }
-
-           
-</style> 
-    <script>
-
-  $(".submenu").click(function(){
-  $(this).children("ul").slideToggle();
-})
-
-$("ul").click(function(ev){
-  ev.stopPropagation();
-})
-    </script> 
 </head>
    
 
@@ -195,12 +43,9 @@ $("ul").click(function(ev){
               Clientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">CONSULTA CLIENTES</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider"/>
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">Consulta Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Clientes</a></li>
             </ul>
           </li>
 
@@ -210,12 +55,9 @@ $("ul").click(function(ev){
               Productos
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider"/>
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/PRODUCTOS">Consulta Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_PRODUCTOS">Agrega Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Producto">Edita Productos</a></li>
             </ul>
           </li>
 
@@ -226,34 +68,6 @@ $("ul").click(function(ev){
 </nav>
     </navbar>
 
-
-    <header class="navbar-fixed-top ">
-     <img src="Imagenes/LOGO.jpeg" class="rounded-3 centrado" alt="HTML5 ICON" width="150" height="64" />
-    <input type="checkbox" id="btn-menu" />
-    <label for="btn-menu"><i class="fa fa-bars"></i></label>
-    <nav class="menu">
-      <ul>
-        <li class="submenu"><a href="Administrador/CLIENTES.aspx">Clientes<i class="fa fa-caret-down"></i></a>
-            <ul>
-            <li><a href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Cliente</a></li>
-            <li><a href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
-            <li><a href="Administrador/HISTORIAL.aspx">Historial</a></li>
-            </ul>
-        </li>
-          <li class="submenu"><a href="Administrador/PRODUCTOS.aspx">Productos<i class="fa fa-caret-down"></i></a>
-          <ul>
-            <li><a href="Administrador/FORMULARIO_PRODUCTOS">Agregar Producto</a></li>
-            <li><a href="Administrador/Editar_Producto">Editar Productos</a></li>
-          </ul>
-        </li>
-        <li><a href="Administrador/Servicios.aspx">Servicios</a></li>
-        <li><a href="#">Compras</a></li>
-        <li><a href="Login.aspx">Iniciar Sesion</a></li>
-      </ul>
-    </nav>
-</header>
-  
- <!--  <img src="Imagenes/LOGO.jpeg" class="d-block w-100" alt="..."/> -->
  
     <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
