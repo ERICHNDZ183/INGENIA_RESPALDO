@@ -35,7 +35,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -69,7 +69,7 @@
     </navbar>
 
  
-    <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>

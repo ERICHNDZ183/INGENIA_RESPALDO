@@ -18,7 +18,7 @@ position: fixed;
 
 width: 1500px;
 
-bottom: 35px;
+bottom: 55px;
 
 height: 2px;
 
@@ -30,35 +30,19 @@ z-index:2000;
 margin-left: 0px;
 
 }
-
-         
-.boton_personalizado {
-    text-decoration: none;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 20px;
-    border: 2px solid #808080;
-}
-
-    .boton_personalizado:hover {
-        color: #18803b;
-        background-color: #ffffff;
-    }
-
   
 </style>
 </head>
 
 <body>
 
+     <form id="form1" runat="server">
+   
      <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="Imagenes/LOGO.jpeg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
+        <img src="Imagenes/LOGO.jpg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
         PTC INGENIA
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -114,22 +98,8 @@ margin-left: 0px;
 </nav>
     </navbar>
 
-
-     <form id="form1" runat="server">
-         <table>
-            <tr>
-                <td>
-                    <div>
-                    <asp:Button class="boton_personalizado" ID="btnHOME" runat="server" Text="HOME" OnClick="btnHOME_Click"/>
-                    <asp:Button class="boton_personalizado" ID="btnHistorial" runat="server" Text="Historial" OnClick="btnHistorial_Click1" />
-                    <asp:Button class="boton_personalizado" ID="btnAgregar_cliente" runat="server" Text="Agregar cliente" OnClick="btnAgregar_cliente_Click1"/>
-
-                    </div>
-                </td>
-            </tr>
-         </table>
-   
-        <table bordercolor="white"; style="background: #ffd800;" align="center" border="1">
+         <conteiner>
+        <table bordercolor="white"; style="background: #808080;" align="center" border="1">
              <tr fontcolor="#ffffff">
                <td fontcolor="#ffffff">
                    <asp:GridView ID="gvDatos" runat="server"  >
@@ -137,20 +107,21 @@ margin-left: 0px;
                </td>
            </tr> 
        </table>
-    </form>
+             </conteiner>
 
 
- <footer style="width:201%; left: -1px;" class="footer">
-    <div  class="container-fluid" style="background-color: #1883ba; color: #ffffff;">
-       Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
-        Telefono: 7828181277<br />
-        ventas@grupoingenia.com.mx
+<footer style="width:100%; margin-left: 0px;" class="footer">
+    <div class="copyright" style="background-color: #0d47a1;">
+        <div  class="container-fluid" style="background-color: #000; color: #ffffff;">
+            Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
+            Telefono: 7828181277<br />
+            ventas@grupoingenia.com.mx
+        </div>
     </div>
-
 </footer>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
-
+    </form>
 </body>
 </html>

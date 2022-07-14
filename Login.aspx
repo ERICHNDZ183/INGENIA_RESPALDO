@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <title>PCT Ingenia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    
 
 <style>
     footer{
@@ -49,57 +51,71 @@ z-index:2000;
 	    margin-left: 40px;
         margin-right: 100px;
     }
-    .auto-style2 {
-        left: -1px;
-        bottom: 173px;
-        width: 1526px;
+    .auto-style1 {
+        left: 2px;
+        bottom: 38px;
     }
 </style>
        
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-dark">
+     <form class="centrado" id="form1" runat="server">
+     <navbar>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand">
+        <img src="Imagenes/LOGO.jpeg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
+        PTC INGENIA
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="INICIO.aspx">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+    <div class="offcanvas offcanvas-end   bg-dark"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title; color"  id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body bg-dark">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="INICIO.aspx">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
+          </li>
 
-      </ul>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Clientes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">Consulta Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Clientes</a></li>
+            </ul>
+          </li>
+
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="Administrador/PRODUCTOS">Consulta Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_PRODUCTOS">Agrega Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Producto">Edita Productos</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
-
-    <form class="centrado" id="form1" runat="server">
-        <div class="card text-center"  style="width: 18rem;" margin="500px">
+    </navbar>
+    
+   
+        <div class="card text-center"  style="width: 18rem; left: -24px; top: 106px;" margin="500px">
           <div class="card-body">
                <img src="Imagenes/LOGO.jpeg" class="rounded-3 centrado_img" alt="HTML5 ICON" width="150" height="90" />
             <h5 class="card-title">Login</h5>
@@ -120,15 +136,21 @@ z-index:2000;
         </div>
     </form>
 
+
   
 
 
-  <!--  <footer  style="margin-left: 0px; " class="footer">
+  <footer  style="margin-left: 0px; " class="auto-style1">
     <div style="background-color: #000000; color: #ffffff;">
        Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
        Telefono: 7828181277<br />
        ventas@grupoingenia.com.mx
     </div>
-    </footer>  -->
+    </footer> 
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
