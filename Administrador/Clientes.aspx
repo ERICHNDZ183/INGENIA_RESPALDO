@@ -34,10 +34,11 @@ margin-left: 0px;
 </style>
 </head>
 
-<body>
+<body style="height: 493px">
 
+    
      <form id="form1" runat="server">
-   
+    
      <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -56,10 +57,10 @@ margin-left: 0px;
       <div class="offcanvas-body bg-dark">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="../INICIO.aspx">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">dkljgfkf</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -97,6 +98,7 @@ margin-left: 0px;
   </div>
 </nav>
     </navbar>
+   
 
          <conteiner>
         <table bordercolor="white"; style="background: #808080;" align="center" border="1">

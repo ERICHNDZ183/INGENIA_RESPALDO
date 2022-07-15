@@ -31,7 +31,7 @@ margin-left: 0px;
 </head>
 <body>
      <form id="form1" runat="server">
-
+         <container>
            <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -44,7 +44,7 @@ margin-left: 0px;
     </button>
     <div class="offcanvas offcanvas-end   bg-dark"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title; color"  id="offcanvasNavbarLabel">Menú</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body bg-dark">
@@ -53,56 +53,52 @@ margin-left: 0px;
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Clientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">Consulta Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Clientes</a></li>
             </ul>
           </li>
+
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="Administrador/PRODUCTOS">Consulta Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_PRODUCTOS">Agrega Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Producto">Edita Productos</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div>
     </div>
   </div>
 </nav>
     </navbar>
-        
-        <div>
-        </div>
-        <table>
-             <tr>
-               <td>
+             </container>
+       <table>
+            <tr>
+                <td>
+
                    <asp:GridView ID="gvDatos" runat="server" >
                    </asp:GridView>
                    
-               </td>
-           </tr> 
-       </table>  
-        <div style="text-align: right;">
-       <table>
-            <tr>
-                   <td>
-                       <asp:Button ID="btnHOME" runat="server" Text="HOME" style="height: 26px" OnClick="btnHOME_Click" />
-                       
-            
-            <asp:Button class="boton_personalizado" ID="btnCitas" runat="server" Text="Citas"/>
-   
-
-                   </td>
-               </tr>
-       </table>
-           </div> 
+                </td>
+            </tr>
+       </table> 
     </form>
 
-    <footer style="width:100%; margin-left: 0px;" class="footer">
+<footer style="width:100%; margin-left: 0px;" class="footer">
     <div class="copyright" style="background-color: #0d47a1;">
         <div  class="container-fluid" style="background-color: #000; color: #ffffff;">
             Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
@@ -113,9 +109,6 @@ margin-left: 0px;
 </footer>
 
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-
-
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>

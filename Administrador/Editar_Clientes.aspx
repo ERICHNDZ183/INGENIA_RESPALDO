@@ -10,59 +10,57 @@
     
     <link href="Estilos/Estilo.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-  body {
-    background-color: #ffffff;
-    color: #ffffff;
-}
-
-table thead {
-    background-color: #ac0a0qa darkmagenta;
-    color: rgb(0, 255, 144);
-}
-
-.boton_personalizado {
-    text-decoration: none;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 20px;
-    border: 2px solid #808080;
-}
-
-.boton_personalizado:hover {
-    color: #18803b;
-    background-color: #ffffff;
-}
 
 footer {
     position: fixed;
     width: 1500px;
-    bottom: 35px;
+    bottom: 56px;
     height: 2px;
     padding-bottom: 16px;
     border-top: 2px solid rgb(0, 255, 144);
     z-index: 2000;
     margin-left: 0px;
 }
-
-.auto-style1 {
-    width: 886px;
-}
-
-.auto-style2 {
-    width: 100%;
-    left: -1px;
-    bottom: 23px;
-}
-
+        centrado {
+            bottom: 82px;
+        }
+        .auto-style1 {
+            width: 253px;
+        }
+        .auto-style2 {
+            width: 222px;
+        }
+        .auto-style3 {
+            width: 171px;
+        }
+        .auto-style4 {
+            width: 171px;
+            height: 51px;
+        }
+        .auto-style5 {
+            width: 222px;
+            height: 51px;
+        }
+        .auto-style6 {
+            width: 171px;
+            height: 130px;
+        }
+        .auto-style7 {
+            width: 222px;
+            height: 130px;
+        }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
 
-          <navbar>
+
+
+
+
+</head>
+
+
+<body> 
+    
+         <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand">
@@ -74,7 +72,7 @@ footer {
     </button>
     <div class="offcanvas offcanvas-end   bg-dark"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title; color"  id="offcanvasNavbarLabel">Menú</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body bg-dark">
@@ -83,123 +81,130 @@ footer {
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Clientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">Consulta Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Clientes</a></li>
             </ul>
           </li>
+
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="Administrador/PRODUCTOS">Consulta Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_PRODUCTOS">Agrega Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Producto">Edita Productos</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div>
     </div>
   </div>
 </nav>
     </navbar>
+   
 
-
-        <div style="text-align: right;">
-        <asp:Button class="boton_personalizado" ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click"/>
-        <asp:Button class="boton_personalizado" ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click1"/>
-        <asp:Button class="boton_personalizado" ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click"/>
-        </div>
-
-        <table border="1" align="center" style="width: 30%" bordercolor="blue">
+    <form id="form1" runat="server">
+          
+        <table border="1" align="center" style="centrado; width: 30%" bordercolor="blue">
             <caption>Tabla para editar clientes</caption>
             <tr >
-                <td class="style" bgcolor="purple">
+                <td class="auto-style6" bgcolor="purple">
                     <asp:Label ID="lblId_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="ID CLIENTE"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style7">
                 <asp:TextBox ID="txtId_Cliente" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
             <tr >
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre_Cliente"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                 <asp:TextBox ID="txtNombre_Cliente" runat="server" Width="205px" ></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblApellido" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Apellido"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                     <asp:TextBox ID="txtApellido" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblUbicacion" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Ubicacion"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                 <asp:TextBox ID="txtUbicacion" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblCorreo" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                     <asp:TextBox ID="txtCorreo" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblTelefono" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                     <asp:TextBox ID="txtTelefono" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
              <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblNombre_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre Empresa"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                     <asp:TextBox ID="txtNombre_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
              <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style3" bgcolor="purple">
                     <asp:Label ID="lblCorreo_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo Empresa"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style2">
                     <asp:TextBox ID="txtCorreo_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
 
              <tr>
-                <td class="style" bgcolor="purple">
+                <td class="auto-style4" bgcolor="purple">
                     <asp:Label ID="lblTelefono_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono Empresa"></asp:Label>
                 </td>
-                <td bgcolor="green">
+                <td bgcolor="green" class="auto-style5">
                     <asp:TextBox ID="txtTelefono_Empresa" runat="server" Width="205px"></asp:TextBox>
                 </td>
             </tr>
@@ -217,6 +222,8 @@ footer {
             </tr>
         </table>        
     </form>
+    
+
 
     <footer class="footer">
     <div class="copyright" style="background-color: #0d47a1;">  <div  class="auto-style1" style="background-color: #000; color: #ffffff;">
