@@ -31,12 +31,11 @@ margin-left: 0px;
 </head>
 <body>
      <form id="form1" runat="server">
-         <container>
-           <navbar>
+             <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="Imagenes/LOGO.jpeg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
+        <img src="Imagenes/LOGO.jpg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
         PTC INGENIA
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -50,7 +49,7 @@ margin-left: 0px;
       <div class="offcanvas-body bg-dark">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="INICIO.aspx">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
@@ -85,14 +84,11 @@ margin-left: 0px;
   </div>
 </nav>
     </navbar>
-             </container>
        <table>
             <tr>
                 <td>
-
                    <asp:GridView ID="gvDatos" runat="server" >
                    </asp:GridView>
-                   
                 </td>
             </tr>
        </table> 

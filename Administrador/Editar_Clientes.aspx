@@ -25,7 +25,7 @@ footer {
             bottom: 82px;
         }
         .auto-style1 {
-            width: 253px;
+            width: 1317px;
         }
         .auto-style2 {
             width: 222px;
@@ -33,21 +33,21 @@ footer {
         .auto-style3 {
             width: 171px;
         }
-        .auto-style4 {
-            width: 171px;
-            height: 51px;
-        }
-        .auto-style5 {
-            width: 222px;
-            height: 51px;
-        }
         .auto-style6 {
             width: 171px;
-            height: 130px;
+            height: 27px;
         }
         .auto-style7 {
             width: 222px;
-            height: 130px;
+            height: 27px;
+        }
+        .auto-style8 {
+            width: 171px;
+            height: 35px;
+        }
+        .auto-style9 {
+            width: 222px;
+            height: 35px;
         }
     </style>
 
@@ -57,9 +57,12 @@ footer {
 
 </head>
 
+    
+  
+          
 
 <body> 
-    
+      <form id="form1" runat="server">
          <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -115,12 +118,10 @@ footer {
     </navbar>
    
 
-    <form id="form1" runat="server">
-          
-        <table border="1" align="center" style="centrado; width: 30%" bordercolor="blue">
+        <table border="1" align="center" style:"centrado"; width: 30%" bordercolor="gold">
             <caption>Tabla para editar clientes</caption>
             <tr >
-                <td class="auto-style6" bgcolor="purple">
+                <td class="auto-style6" bgcolor="beige">
                     <asp:Label ID="lblId_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="ID CLIENTE"></asp:Label>
                 </td>
@@ -130,7 +131,7 @@ footer {
             </tr>
 
             <tr >
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblNombre_Cliente" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre_Cliente"></asp:Label>
                 </td>
@@ -140,7 +141,7 @@ footer {
             </tr>
 
             <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblApellido" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Apellido"></asp:Label>
                 </td>
@@ -150,7 +151,7 @@ footer {
             </tr>
 
             <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblUbicacion" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Ubicacion"></asp:Label>
                 </td>
@@ -160,7 +161,7 @@ footer {
             </tr>
 
             <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblCorreo" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo"></asp:Label>
                 </td>
@@ -170,7 +171,7 @@ footer {
             </tr>
 
             <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblTelefono" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono"></asp:Label>
                 </td>
@@ -180,7 +181,7 @@ footer {
             </tr>
 
              <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblNombre_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Nombre Empresa"></asp:Label>
                 </td>
@@ -190,32 +191,30 @@ footer {
             </tr>
 
              <tr>
-                <td class="auto-style3" bgcolor="purple">
+                <td class="auto-style3" bgcolor="beige">
                     <asp:Label ID="lblCorreo_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Correo Empresa"></asp:Label>
                 </td>
                 <td bgcolor="green" class="auto-style2">
-                    <asp:TextBox ID="txtCorreo_Empresa" runat="server" Width="205px"></asp:TextBox>
+                    <asp:TextBox ID="txtCorreo_Empresa" runat="server" Width="205px" Height="20px"></asp:TextBox>
                 </td>
             </tr>
 
              <tr>
-                <td class="auto-style4" bgcolor="purple">
+                <td class="auto-style8" bgcolor="beige">
                     <asp:Label ID="lblTelefono_Empresa" runat="server" Font-Names="Arial" Font-Size="10pt"
                     Text="Telefono Empresa"></asp:Label>
                 </td>
-                <td bgcolor="green" class="auto-style5">
-                    <asp:TextBox ID="txtTelefono_Empresa" runat="server" Width="205px"></asp:TextBox>
+                <td bgcolor="green" class="auto-style9">
+                    <asp:TextBox ID="txtTelefono_Empresa" runat="server" Width="205px" Height="23px"></asp:TextBox>
                 </td>
             </tr>
-
-
         </table >
 
         
-        <table align="center" border="1" cellspacing="1">
+        <table align="center" border="1" cellspacing="1" bordercolor="gold">
              <tr bgcolor="yellow">
-               <td bgcolor="green">
+               <td bgcolor="beige">
                    <asp:GridView ID="gvDatos" runat="server">
                    </asp:GridView>
                </td>

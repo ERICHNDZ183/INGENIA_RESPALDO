@@ -30,20 +30,26 @@ z-index:2000;
 margin-left: 0px;
 
 }
+
+         CENTRADO 
+         {
+             bottom: 1280px;
+             position: center;
+         }
   
 </style>
 </head>
 
-<body style="height: 493px">
+<body">
 
     
      <form id="form1" runat="server">
-    
-     <navbar>
+     <conteiner>
+      <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="Imagenes/LOGO.jpg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
+        <img src="Imagenes/LOGO.jpeg" alt="" width="30" height="24" class="d-inline-block aling-text-top" />
         PTC INGENIA
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -51,16 +57,16 @@ margin-left: 0px;
     </button>
     <div class="offcanvas offcanvas-end   bg-dark"  tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" color="white" id="offcanvasNavbarLabel">Menu</h5>
+        <h5 class="offcanvas-title; color"  id="offcanvasNavbarLabel">Menú</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body bg-dark">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../INICIO.aspx">Home</a>
+            <a class="nav-link active" aria-current="page" href="INICIO.aspx">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">dkljgfkf</a>
+            <a class="nav-link" href="Login.aspx">Iniciar Sesion</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -68,12 +74,9 @@ margin-left: 0px;
               Clientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">CONSULTA CLIENTES</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider"/>
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/Clientes.aspx">Consulta Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Clientes.aspx">Editar Clientes</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_CLIENTES.aspx">Agregar Clientes</a></li>
             </ul>
           </li>
 
@@ -83,12 +86,9 @@ margin-left: 0px;
               Productos
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider"/>
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="Administrador/PRODUCTOS">Consulta Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/FORMULARIO_PRODUCTOS">Agrega Productos</a></li>
+              <li><a class="dropdown-item" href="Administrador/Editar_Producto">Edita Productos</a></li>
             </ul>
           </li>
 
@@ -98,13 +98,14 @@ margin-left: 0px;
   </div>
 </nav>
     </navbar>
+    
    
-
-         <conteiner>
-        <table bordercolor="white"; style="background: #808080;" align="center" border="1">
+         <img src="Imagenes/LOGO.jpg" />
+           
+        <table bordercolor="white"; style="background: #808080;" align="center" border="1" class="CENTRADO">
              <tr fontcolor="#ffffff">
                <td fontcolor="#ffffff">
-                   <asp:GridView ID="gvDatos" runat="server"  >
+                   <asp:GridView ID="gvDatos" runat="server" Height="210px"  >
                    </asp:GridView>
                </td>
            </tr> 
