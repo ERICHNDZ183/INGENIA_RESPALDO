@@ -27,6 +27,37 @@ z-index:2000;
 margin-left: 0px;
 
 }
+        .auto-style1 {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-border-width: 1px;
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: 0.375rem;
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(0.375rem - 1px);
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: #fff;
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            word-wrap: break-word;
+            background-color: var(--bs-card-bg);
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            left: -14px;
+            top: 75px;
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +116,10 @@ margin-left: 0px;
   </div>
 </nav>
     </navbar>
+
+
+        <div class="auto-style1">
+            <div class="body-card">
         <table align="center">
              <tr>
                <td>
@@ -109,6 +144,9 @@ margin-left: 0px;
                    </td>
                </tr>
        </table>
+            </div>
+        </div>
+
         
     </form>
 

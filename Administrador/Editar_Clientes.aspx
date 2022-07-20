@@ -21,34 +21,7 @@ footer {
     z-index: 2000;
     margin-left: 0px;
 }
-        centrado {
-            bottom: 82px;
-        }
-        .auto-style1 {
-            width: 1317px;
-        }
-        .auto-style2 {
-            width: 222px;
-        }
-        .auto-style3 {
-            width: 171px;
-        }
-        .auto-style6 {
-            width: 171px;
-            height: 27px;
-        }
-        .auto-style7 {
-            width: 222px;
-            height: 27px;
-        }
-        .auto-style8 {
-            width: 171px;
-            height: 35px;
-        }
-        .auto-style9 {
-            width: 222px;
-            height: 35px;
-        }
+        
     </style>
 
 
@@ -118,6 +91,29 @@ footer {
     </navbar>
    
 
+
+    
+
+    <footer class="footer">
+    <div class="copyright" style="background-color: #0d47a1;">  <div  class="auto-style1" style="background-color: #000; color: #ffffff;">
+            Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
+            Telefono: 7828181277<br />
+            ventas@grupoingenia.com.mx
+        </div>
+    </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+      
+    
+    
+
+    <div class="auto-style10">
+             <div class="card-body">
+                 this is some text within a card body
+            
         <table border="1" align="center" style:"centrado"; width: 30%" bordercolor="gold">
             <caption>Tabla para editar clientes</caption>
             <tr >
@@ -211,32 +207,23 @@ footer {
             </tr>
         </table >
 
-        
-        <table align="center" border="1" cellspacing="1" bordercolor="gold">
+<table align="center" border="1" cellspacing="1" bordercolor="gold">
              <tr bgcolor="yellow">
                <td bgcolor="beige">
                    <asp:GridView ID="gvDatos" runat="server">
                    </asp:GridView>
                </td>
             </tr>
-        </table>        
-    </form>
-    
+        </table>
 
-
-    <footer class="footer">
-    <div class="copyright" style="background-color: #0d47a1;">  <div  class="auto-style1" style="background-color: #000; color: #ffffff;">
-            Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
-            Telefono: 7828181277<br />
-            ventas@grupoingenia.com.mx
-        </div>
     </div>
-    </footer>
+    </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        
+                
+    </form>
 
-      
+          
     
 </body>
 </html>
