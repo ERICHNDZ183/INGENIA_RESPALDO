@@ -37,14 +37,44 @@ margin-left: 0px;
              position: center;
          }
   
-</style>
+         .auto-style1 {
+             position: relative;
+             display: flex;
+             flex-direction: column;
+             min-width: 0;
+             word-wrap: break-word;
+             background-clip: border-box;
+             border-radius: var(--bs-card-border-radius);
+             --bs-card-spacer-y: 1rem;
+             --bs-card-spacer-x: 1rem;
+             --bs-card-title-spacer-y: 0.5rem;
+             --bs-card-border-width: 1px;
+             --bs-card-border-color: var(--bs-border-color-translucent);
+             --bs-card-border-radius: 0.375rem;
+             --bs-card-box-shadow;
+             --bs-card-inner-border-radius: calc(0.375rem - 1px);
+             --bs-card-cap-padding-y: 0.5rem;
+             --bs-card-cap-padding-x: 1rem;
+             --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+             --bs-card-cap-color;
+             --bs-card-height;
+             --bs-card-color;
+             --bs-card-bg: #fff;
+             --bs-card-img-overlay-padding: 1rem;
+             --bs-card-group-margin: 0.75rem;
+             height: var(--bs-card-height);
+             left: 2px;
+             top: 57px;
+             background-color: var(--bs-card-bg);
+         }
+  
+     </style>
 </head>
 
 <body">
 
     
      <form id="form1" runat="server">
-     <conteiner>
       <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -100,9 +130,11 @@ margin-left: 0px;
     </navbar>
     
    
-         <img src="Imagenes/LOGO.jpg" />
+         <img src="Imagenes/LOGO.jpeg" />
            
-        <table bordercolor="white"; style="background: #808080;" align="center" border="1" class="CENTRADO">
+         <div class="auto-style1">
+             <div class="card-body">
+                 <table bordercolor="white"; style="background: #808080;" align="center" border="1" class="CENTRADO">
              <tr fontcolor="#ffffff">
                <td fontcolor="#ffffff">
                    <asp:GridView ID="gvDatos" runat="server" Height="210px"  >
@@ -110,7 +142,10 @@ margin-left: 0px;
                </td>
            </tr> 
        </table>
-             </conteiner>
+  
+             </div>
+         </div>
+        
 
 
 <footer style="width:100%; margin-left: 0px;" class="footer">

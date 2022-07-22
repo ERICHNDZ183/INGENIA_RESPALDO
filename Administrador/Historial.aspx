@@ -8,6 +8,39 @@
     <title></title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
     
+    <style type="text/css">
+        .auto-style1 {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-border-width: 1px;
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: 0.375rem;
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(0.375rem - 1px);
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: #fff;
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            word-wrap: break-word;
+            background-color: var(--bs-card-bg);
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            left: 12px;
+            top: 198px;
+        }
+    </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -65,8 +98,9 @@
 </nav>
     </navbar>
 
-
-        <div>
+        <div class="auto-style1">
+            <div class="body-card">
+                <div>
             <table>
              <tr>
                <td>
@@ -84,6 +118,10 @@
                </tr>
        </table>
         </div>
+            </div>
+        </div>
+
+        
     </form>
 
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

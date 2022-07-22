@@ -45,8 +45,7 @@ margin-left: 0px;
      
 
 <body>
-    <form id="form1" runat="server"> 
-        
+    <!--
        <navbar>
         <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -99,11 +98,25 @@ margin-left: 0px;
     </div>
   </div>
 </nav>
-    </navbar>
+    </navbar>-->
+
+
+    <form id="form1" runat="server"> 
+        
+  
+
+
+        <div class="card">
+            <div class="body-card">
+
+            </div>
+        </div>
+                    
         <table align="center">
             <!-- cambia los texbox como el de aqui a bajo para probar si se guarda la infomracion como en este link   
                 http://www.maestrosdelweb.com/tutorial-asp-net-acceso-a-datos-consultar-y-guardar-informacion-desde-webforms/ -->
      
+
         <tr >
         <td class="style">
         <asp:Label ID="lblNombre_Producto" runat="server" Font-Names="Arial" Font-Size="10pt"
@@ -158,9 +171,12 @@ margin-left: 0px;
         <asp:Button ID="Guardar_producto" runat="server" Text="Guardar" OnClick="Guardar_producto_Click" />
         <asp:Button ID="VOLVER_IN" runat="server" Text="VOLVER" OnClick="VOLVER_IN_Click" />
         <asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click"/>
+
+            
+
     </form>
 
-    <footer style="width:100%; margin-left: 0px;" class="footer">
+     <footer style="width:100%; margin-left: 0px;" class="footer">
     <div class="copyright" style="background-color: #0d47a1;">
         <div  class="container-fluid" style="background-color: #000; color: #ffffff;">
             Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
@@ -174,6 +190,9 @@ margin-left: 0px;
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
 
+
+
+    
 
 </body>
 </html>

@@ -22,6 +22,67 @@ footer {
     margin-left: 0px;
 }
         
+        .auto-style1 {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-border-width: 1px;
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: 0.375rem;
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(0.375rem - 1px);
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: #fff;
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            word-wrap: break-word;
+            background-color: var(--bs-card-bg);
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            left: -9px;
+            top: 46px;
+        }
+        .auto-style2 {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-border-width: 1px;
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: 0.375rem;
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(0.375rem - 1px);
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: #fff;
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            word-wrap: break-word;
+            background-color: var(--bs-card-bg);
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            left: 0px;
+            top: 0px;
+        }
+        
     </style>
 
 
@@ -90,28 +151,8 @@ footer {
 </nav>
     </navbar>
    
-
-
-    
-
-    <footer class="footer">
-    <div class="copyright" style="background-color: #0d47a1;">  <div  class="auto-style1" style="background-color: #000; color: #ffffff;">
-            Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
-            Telefono: 7828181277<br />
-            ventas@grupoingenia.com.mx
-        </div>
-    </div>
-    </footer>
-
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-      
-    
-    
-
-    <div class="auto-style10">
-             <div class="card-body">
+       <div class="auto-style1">
+           <div class="card-body">
                  this is some text within a card body
             
         <table border="1" align="center" style:"centrado"; width: 30%" bordercolor="gold">
@@ -215,11 +256,25 @@ footer {
                </td>
             </tr>
         </table>
+           </div>
+       </div>
+               
 
-    </div>
-    </div>
+ 
 
         
+    <footer class="footer">
+    <div class="copyright" style="background-color: #0d47a1;">  <div  class="auto-style2" style="background-color: #000; color: #ffffff;">
+            Concepción Fuentes L3 Magisterios 93320 Poza Rica de Hidalgo, Veracuz de Ignacio de la Llave, Mexico.<br/>
+            Telefono: 7828181277<br />
+            ventas@grupoingenia.com.mx
+        </div>
+    </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
                 
     </form>
 
